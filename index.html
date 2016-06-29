@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="handlers.js"></script>
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "row" id = "toprow"><p>Please tell us who you are (Georgia residents only)</p></div>
+			<form>
+				<div class = "row">
+				First name: <input type="text" name="firstName" id="FirstName" onchange = "nameHandler(document.getElementById('FirstName').value);">
+				<!-- nameHandler(document.getElementById('FirstName').value); THIS SHOULD BE THE LAYOUT OF METHOD CALLS IN HTML
+				phoneHandler(document.getElementById('number').value); -->
+				Last name: <input type="text" name="lastName" id="LastName" onchange = "nameHandler2(document.getElementById('LastName').value);">
+				</div>
+				
+				<div class = "row">
+					Telephone: <input type="text" name="telephone" id="number" onchange = "phoneNumber();">
+				</div>
+				
+				<div class = "row">
+					<!-- maybe use onBlur instead of onchange for this - use onkeyup for autocomplete -->
+				City:  <input type="text" name="city" style="margin-left: 40px" id="CITY" OnKeyUp="autoComplete();" onchange = "zipCode();">
+				Zip Code: <select id="MENU"></select> <!-- Figure out how this works -->
+				</div>
+				
+				<div class = "row" id = "bottomrow">
+				<button type="button">Share personal info with our unscrupulous marketing staff</button>
+				</div>
+		</form>
+		</div>
+	</body>
+</html>

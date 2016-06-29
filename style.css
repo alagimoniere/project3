@@ -1,0 +1,26 @@
+span{
+	/*align to left*/
+}
+
+body{
+	background-color: pink;
+}
+
+.container {
+	margin: auto;
+	width: 32%;
+}
+
+.row {
+	margin-top: 5px;
+	width: 600px; /* Added to fix alignment issue with smaller screens */
+}
+
+#toprow {
+	text-align: center;
+	font-weight: bold;
+}
+
+#bottomrow {
+	text-align: center;
+}
